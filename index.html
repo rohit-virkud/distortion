@@ -1,315 +1,325 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sofa Company | @rohit_virkud</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Comfortaa', cursive;
-                /*font-family: 'Lato', sans-serif;*/
-            }
-            a{
-                color: inherit; 
-                text-decoration: none;
-            }
-            
-
-            .slider {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    
-    
-    }
-        .rgbKineticSlider {
-        display: block;
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofa Company | @rohit_virkud</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comfortaa', cursive;
+            /*font-family: 'Lato', sans-serif;*/
         }
-            
-            
+        a{
+    		 color: inherit; 
+    		 text-decoration: none;
+        }
         
-            .swiper-container
-            {
-                position:absolute;
-                top:0;
-                left:0;
-                width: 100%;
-                height: 100%;
-            }
+
+        .slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  
+  
+}
+    .rgbKineticSlider {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    }
+
+    canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
         
-            .swiper-slide
-            {
-            /* background-size:cover;
-                background-position: center;*/
-                box-sizing: border-box;
-                color: transparent;
-                
-            }
-            .my-wrapper
-            {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-shrink: 0;
-            }
-            .my-container
-            {
-                width: 90%;
-                height: 100%;
-                background-color: transparent;
-            }
-            .navbar
-            {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-content: center;
-            }
-            .logo
-            {
-                width: 150px;
-                height: 10%;
-                margin-top: 3%;
-            }
-
-            .share
-            {
-                width: 50px;
-                height: 50px;
-                position: absolute;
-                top: 0;
-                right: 0;
-            
-            }
-            .heading
-            {
-                margin-top: min(20vw,10vh);
-                font-size: 5vw;
-                color:#B30F18;
-            }
-            .subhead
-            {
-                margin-top: min(3vw,2.5vh);
-                font-size: 3vw;
-                color:#000000;
-
-            }
-            .contact-container
-            {
-                display: flex;
-                align-items: center;
-                width: 100%;
-                margin-top: 4vw;
-            }
-            .contact-container p
-            {
-                color: black;
-                margin-left: 5vw;
-                font-size: 4vw;
-            }
-            .contact-container img
-            {
-                width: 6vw;
-                height: 6%;
-            }
-            .mg-top
-            {
-                margin-top: 10vw;
-            }
-            .mg-bottom
-            {
-                margin-bottom: 13vw;
-            }
-
-            .primary-btn
-            {
-                background-color: #B30F18;
-                width: 10vw;
-                color:white;
-                font-family: 'Lato', sans-serif;
-                padding: 15px 20px;
-                font-size: 3vw;
-                
-            }
-
-            .next-icon
-            {
-                position: absolute;
-                width: 10vw;
-                height: 10vw;
-                top: 90%;
-                right: 5%;
-
-            }
-            
-
-
-
-
-            
         
-        </style>
-    </head>
-    <body>
-    <div class="slider">
-        <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
-        <!--<nav>
-            <a href="#" class="main-nav prev swiper-button-prev" data-nav="previous">Prev <span></span></a>
-            <a href="#" class="main-nav next swiper-button-next" data-nav="next">Next <span></span></a>
-        </nav> -->
-        </div>
+       
+        .swiper-container
+        {
+            position:absolute;
+            top:0;
+            left:0;
+            width: 100%;
+		    height: 100%;
+        }
+       
+        .swiper-slide
+        {
+           /* background-size:cover;
+            background-position: center;*/
+            box-sizing: border-box;
+            color: transparent;
+            
+        }
+        .my-wrapper
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .my-container
+        {
+            width: 90%;
+            height: 100%;
+            background-color: transparent;
+        }
+        .navbar
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .logo
+        {
+            width: 150px;
+            height: 10%;
+            margin-top: 3%;
+        }
+
+        .share
+        {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+           
+        }
+        .heading
+        {
+            margin-top: min(20vw,10vh);
+            font-size: 5vw;
+            color:#B30F18;
+        }
+        .subhead
+        {
+            margin-top: min(3vw,2.5vh);
+            font-size: 3vw;
+            color:#000000;
+
+        }
+        .contact-container
+        {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-top: 4vw;
+        }
+        .contact-container p
+        {
+            color: black;
+            margin-left: 5vw;
+            font-size: 4vw;
+        }
+        .contact-container img
+        {
+            width: 6vw;
+            height: 6%;
+        }
+        .mg-top
+        {
+            margin-top: 10vw;
+        }
+        .mg-bottom
+        {
+            margin-bottom: 13vw;
+        }
+
+        .primary-btn
+        {
+             background-color: #B30F18;
+             width: 10vw;
+             color:white;
+             font-family: 'Lato', sans-serif;
+             padding: 15px 20px;
+             font-size: 3vw;
+             
+        }
+
+        .next-icon
+        {
+            position: absolute;
+            width: 10vw;
+            height: 10vw;
+            top: 90%;
+            right: 5%;
+
+        }
+        
 
 
-        <div class="swiper-container">
-            
-            
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="my-wrapper">
-                    <img src="share.png" class="share"/>  
-                    <div class="my-container">
-                    <div class="navbar">
+
+
+        
     
-                            <img src="sofa-logo.png" class="logo"/>
-                            
-
-                    </div>
-
-                    <h1 class="heading">ΕΥΑΓΓΕΛΟΣ ΣΥΛΑΣ ΚΟΥΤΣΟΧΡΗΣΤΟΣ</h1>
-                    <p class="subhead">Πρόεδρος και Διευθύνων Σύμβουλος</p>
-
-                    
-                    <a href="#!"  class="contact-container mg-top">
-                        <img src="mobile icon.png"  alt="mobile-icon"/>
-                        <p>+30 6932603100</p>
-                    </a>
+    </style>
+</head>
+<body>
+   <div class="slider">
+    <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+    <!--<nav>
+        <a href="#" class="main-nav prev swiper-button-prev" data-nav="previous">Prev <span></span></a>
+        <a href="#" class="main-nav next swiper-button-next" data-nav="next">Next <span></span></a>
+    </nav> -->
+    </div>
 
 
-                    <a href="#!"   class="contact-container">
-                        <img src="mobile icon.png" alt="mobile-icon"/>
-                        <p>+30 6988077777</p>
-                    </a>
+    <div class="swiper-container">
+        
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="my-wrapper">
+                <img src="share.png" class="share"/>  
+                <div class="my-container">
+                   <div class="navbar">
+   
+                        <img src="sofa-logo.png" class="logo"/>
+                        
 
-                    <a href="#!"   class="contact-container">
-                        <img src="home icon.png" alt="home-icon"/>
-                        <p>+30 210 3424651</p>
-                    </a>
+                   </div>
 
-                    <a href="#!"   class="contact-container">
-                        <img src="email icon.png" alt="email-icon"/>
-                        <p>silasvagelis@hotmail.com</p>
-                    </a>
+                   <h1 class="heading">ΕΥΑΓΓΕΛΟΣ ΣΥΛΑΣ ΚΟΥΤΣΟΧΡΗΣΤΟΣ</h1>
+                   <p class="subhead">Πρόεδρος και Διευθύνων Σύμβουλος</p>
 
-                    <a href="#!"   class="contact-container">
-                        <img src="web icon.png" alt="web-icon"/>
-                        <p>www.silas-koutsochristou.com</p>
-                    </a>
-
-                    <a href="#!"  class="contact-container">
-                        <img src="web icon.png"  alt="web-icon"/>
-                        <p>www.housedecor.gr</p>
-                    </a>
-
-                    
-                    <a href="#!"  class="contact-container mg-bottom">
-                        <img src="location icon.png"  alt="location-icon"/>
-                        <p>Π.Ράλλη 37A, Ταύρος, 177-78 </p>
-                    </a>
-
-                    <a href="#!" class="primary-btn">
-                        SAVE MY CONTACTS
-                    </a>   
-            
-                </div> <!-- my container --->
-                <img src="right.png" alt="next-arrow-icon" class="main-nav next swiper-button-next  swiper-button-next next-icon" />
-                </div> <!-- my wrapper --->
-            </div>  <!-- swiper slide --->
-            
-            
-            <div class="swiper-slide">
-                <center><h1 class="heading">second-screen</h1></center>
-                </div> 
+                   
+                   <a href="#!"  class="contact-container mg-top">
+                       <img src="mobile icon.png"  alt="mobile-icon"/>
+                       <p>+30 6932603100</p>
+                   </a>
 
 
-            </div>
+                   <a href="#!"   class="contact-container">
+                    <img src="mobile icon.png" alt="mobile-icon"/>
+                    <p>+30 6988077777</p>
+                   </a>
+
+                   <a href="#!"   class="contact-container">
+                    <img src="home icon.png" alt="home-icon"/>
+                    <p>+30 210 3424651</p>
+                   </a>
+
+                   <a href="#!"   class="contact-container">
+                    <img src="email icon.png" alt="email-icon"/>
+                    <p>silasvagelis@hotmail.com</p>
+                   </a>
+
+                   <a href="#!"   class="contact-container">
+                    <img src="web icon.png" alt="web-icon"/>
+                    <p>www.silas-koutsochristou.com</p>
+                   </a>
+
+                   <a href="#!"  class="contact-container">
+                    <img src="web icon.png"  alt="web-icon"/>
+                    <p>www.housedecor.gr</p>
+                   </a>
+
+                   
+                   <a href="#!"  class="contact-container mg-bottom">
+                    <img src="location icon.png"  alt="location-icon"/>
+                    <p>Π.Ράλλη 37A, Ταύρος, 177-78 </p>
+                   </a>
+
+                   <a href="#!" class="primary-btn">
+                    SAVE MY CONTACTS
+                   </a>   
+        
+              </div> <!-- my container --->
+              <img src="right.png" alt="next-arrow-icon" class="main-nav next swiper-button-next  swiper-button-next next-icon" />
+            </div> <!-- my wrapper --->
+          </div>  <!-- swiper slide --->
+          
+          
+          <div class="swiper-slide">
+              <center><h1 class="heading">second-screen</h1></center>
+              <img src="left.png" alt="next-arrow-icon" class="main-nav prev swiper-button-prev  swiper-button-prev next-icon" />
+            </div> 
+
 
         </div>
 
+    </div>
 
+
+     
+     <!-- TweenMax -->
+     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+
+     <!-- Pixi JS -->
+     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+
+     <!-- Slider Plugin -->
+     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+
+     <!-- swiper js  ----> 
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     
+     <script>
+
+         
+     const images = ["https://rohit-virkud.github.io/distortion/background idea.png", "https://rohit-virkud.github.io/distortion/img2.png"];
+
+
+        rgbKineticSlider = new rgbKineticSlider({
+            slideImages: images,
         
-        <!-- TweenMax -->
-        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
 
-        <!-- Pixi JS -->
-        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+            backgroundDisplacementSprite:
+                "http://hmongouachon.com/_demos/rgbKineticSlider/map-9.jpg",
+            cursorDisplacementSprite:
+                "http://hmongouachon.com/_demos/rgbKineticSlider/displace-circle.png",
+            cursorScaleIntensity: 0.6,
+            cursorMomentum: 0.14,
 
-        <!-- Slider Plugin -->
-        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+            swipe: true,
+            swipeDistance: window.innerWidth * 0.4,
+            swipeScaleIntensity: 2,
 
-        <!-- swiper js  ----> 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        
-        <script>
+            slideTransitionDuration: 0.8,
+            transitionScaleIntensity: 30,
+            transitionScaleAmplitude: 160,
 
-            
-        const images = ["https://rohit-virkud.github.io/doctor-template/Robo1.png", "https://rohit-virkud.github.io/doctor-template/9.png"];
+            nav: true,
+            navElement: ".main-nav",
+
+            imagesRgbEffect: false,
+            imagesRgbIntensity: 4,
+            navImagesRgbIntensity: 120,
+        });
 
 
-            rgbKineticSlider = new rgbKineticSlider({
-                slideImages: images,
-            
 
-                backgroundDisplacementSprite:
-                    "http://hmongouachon.com/_demos/rgbKineticSlider/map-9.jpg",
-                cursorDisplacementSprite:
-                    "http://hmongouachon.com/_demos/rgbKineticSlider/displace-circle.png",
-                cursorScaleIntensity: 0.6,
-                cursorMomentum: 0.14,
 
-                swipe: true,
-                swipeDistance: window.innerWidth * 0.4,
-                swipeScaleIntensity: 2,
 
-                slideTransitionDuration: 0.8,
-                transitionScaleIntensity: 30,
-                transitionScaleAmplitude: 160,
 
-                nav: true,
-                navElement: ".main-nav",
-
-                imagesRgbEffect: false,
-                imagesRgbIntensity: 4,
-                navImagesRgbIntensity: 120,
+         var swiper = new Swiper('.swiper-container', {
+            speed: 1400,
+            noSwiping: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             });
-
-
-
-
-
-
-            var swiper = new Swiper('.swiper-container', {
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                });
-        </script>
-    </body>
-    </html>
+     </script>
+</body>
+</html>
