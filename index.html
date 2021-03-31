@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sofa Company | @rohit_virkud</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         *{
@@ -21,30 +21,52 @@
     		 text-decoration: none;
         }
         
+       
 
         .slider {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   
   
 }
+
+ .slider img
+ {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+
+ }
     .rgbKineticSlider {
     display: block;
     position: relative;
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     }
-
+    
     canvas {
   position: absolute;
   display: block;
   top: 0;
   left: 0;
+  background-size: cover;
+    background-position: center;
 }
+        
+
+      .slide-01
+        {
+          background: url('background idea.png') no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+
+
         
         
        
@@ -54,7 +76,7 @@
             top:0;
             left:0;
             width: 100%;
-		    height: 100%;
+		        height: 100%;
         }
        
         .swiper-slide
@@ -89,15 +111,15 @@
         }
         .logo
         {
-            width: 150px;
+            width: min(46vw,24vh);
             height: 10%;
             margin-top: 3%;
         }
 
         .share
         {
-            width: 50px;
-            height: 50px;
+            width: min(15.625vw,8vh);
+            height: min(15.625vw,8vh);
             position: absolute;
             top: 0;
             right: 0;
@@ -105,14 +127,15 @@
         }
         .heading
         {
-            margin-top: min(20vw,10vh);
-            font-size: 5vw;
+          width: 60vw;
+            margin-top: min(20vw,12vh);
+            font-size: min(6vw,3vh);
             color:#B30F18;
         }
         .subhead
         {
-            margin-top: min(3vw,2.5vh);
-            font-size: 3vw;
+            margin-top: min(2.5vw,2vh);
+            font-size: min(3vw,2vh);
             color:#000000;
 
         }
@@ -121,49 +144,178 @@
             display: flex;
             align-items: center;
             width: 100%;
-            margin-top: 4vw;
+            margin-top: min(4vw,2vh);
         }
         .contact-container p
         {
             color: black;
-            margin-left: 5vw;
-            font-size: 4vw;
+            margin-left: min(5vw,2.5vh);
+            font-size: min(4vw,2vh);
         }
         .contact-container img
         {
-            width: 6vw;
+            width: min(7vw,3.5vh);
             height: 6%;
         }
         .mg-top
         {
-            margin-top: 10vw;
+            margin-top: min(10vw,6vh);
         }
         .mg-bottom
         {
-            margin-bottom: 13vw;
+            margin-bottom: min(13vw,6.5vh);
+        }
+        .btn-outline
+        {
+          width: min(40vw,20vh);
+          height: 8%;
+          border: 1.5px solid #B30F18;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          color:white;
+          font-size: min(3vw,1.5vh);
         }
 
         .primary-btn
         {
              background-color: #B30F18;
-             width: 10vw;
+            
              color:white;
              font-family: 'Lato', sans-serif;
-             padding: 15px 20px;
-             font-size: 3vw;
+             font-weight: 900;
+             padding-top: min(3.438vw,1.8vh);
+             padding-bottom:  min(3.438vw,1.8vh);
+             padding-left: min(3.125vw,1.5vh);
+             padding-right: min(3.125vw,1.5vh);
+             font-size: min(3vw,1.5vh);
              
-        }
+        } 
+
+
 
         .next-icon
         {
             position: absolute;
-            width: 10vw;
-            height: 10vw;
-            top: 90%;
-            right: 5%;
+            width: min(15vw,8vh);
+            height: min(15vw,8vh);
+            top: 94%;
+            right: 0;
+
+        }
+
+        /* Share Screen Two */
+        .slide-02
+        {
+          background: url('background-slide-02.png') no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+
+
+        .fb
+        {
+          margin-top: min(7vw,3vh);
+          width: min(10vw,5vh);
+          height: 5%;
+        }
+        .prev-icon
+        {
+            position: absolute;
+            width: min(15vw,8vh);
+            height: min(15vw,8vh);
+            top: 94%;
+            left: 0;
 
         }
         
+
+        /* Share Screen Three */
+
+        .slide-03
+        {
+          background: url('3rdBackground.png') no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+
+        .slide-03-logo
+        {
+          margin-top: min(16vw,8vh);
+          width: min(50vw,30vh);
+          height: 8%;
+        }
+        .subhead-03
+        {
+           color: white;
+           font-family: 'Lato', sans-serif;
+           font-weight: 400;
+           width: 60vw;
+           margin-top: min(8vw,7vh);
+           line-height: min(5vw,2.5vh);
+        }
+
+        .social-icons
+        {
+          display: flex;
+          margin-top: min(10vw,6vh);
+
+        }
+        .fb-03
+        {
+          width: min(3vw,1.5vh);
+          height: 3%;
+          margin-left: min(4vw,2vh);
+        }
+        .insta-03
+        {
+          width: min(6.5vw,3.5vh);
+          height: 4%;
+
+        }
+        .fb-03 img
+        {
+         
+          width: min(3vw,1.5vh);
+          height: 3%;
+        }
+        .insta-03 img
+        {
+          width: min(6.5vw,3.5vh);
+          height: 4%;
+
+        }
+
+        .btn-outline-02
+        {
+          margin-top: min(10vw,5vh);
+          width: min(25vw,18vh);
+          height: 7.5%;
+          border: 1.5px solid #B30F18;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          color: white;
+          font-size: min(3vw,1.5vh);
+        }
+
+        .primary-btn-02
+        {
+             background-color: #B30F18;
+            
+             color:white;
+             font-family: 'Lato', sans-serif;
+             font-weight: 900;
+             padding-top: min(3vw,1.8vh);
+             padding-bottom:  min(3vw,1.8vh);
+             padding-left: min(3vw,1.5vh);
+             padding-right: min(3vw,1.5vh);
+             font-size: min(3vw,1.5vh);
+             
+        } 
+
 
 
 
@@ -186,7 +338,7 @@
         
         
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-01">
             <div class="my-wrapper">
                 <img src="share.png" class="share"/>  
                 <div class="my-container">
@@ -238,25 +390,75 @@
                     <p>Π.Ράλλη 37A, Ταύρος, 177-78 </p>
                    </a>
 
-                   <a href="#!" class="primary-btn">
-                    SAVE MY CONTACTS
-                   </a>   
+                   <div class="btn-outline">
+                     <a href="#!" class="primary-btn">
+                      SAVE MY CONTACTS
+                     </a>  
+                   </div> 
         
               </div> <!-- my container --->
-              <img src="right.png" alt="next-arrow-icon" class="main-nav next swiper-button-next  swiper-button-next next-icon" />
+              <img src="backarrow.png" alt="next-arrow-icon" class="main-nav next swiper-button-next  swiper-button-next next-icon" />
             </div> <!-- my wrapper --->
           </div>  <!-- swiper slide --->
           
           
-          <div class="swiper-slide">
-              <center><h1 class="heading">second-screen</h1></center>
-              <img src="left.png" alt="next-arrow-icon" class="main-nav prev swiper-button-prev  swiper-button-prev next-icon" />
-            </div> 
+          <div class="swiper-slide slide-02">
+              <!-- <img src="left.png" alt="next-arrow-icon" class="main-nav prev swiper-button-prev  swiper-button-prev next-icon" /> -->
+
+              <div class="my-wrapper">
+              
+                <div class="my-container">
+                <h1 class="heading" style="width: 80vw;">ΕΠΙΠΛΟ – ΔΙΑΚΟΣΜΗΣΗ  ΕΠΑΓΓΕΛΜΑΤΙΚΟΣ ΕΞΟΠΛΙΣΜΟΣ</h1>
+                <p class="subhead"  style="width: 70vw;">Η εταιρεία Ν.ΣΥΛΑΣ-Α.ΚΟΥΤΣΟΧΡΗΣΤΟΥ Α.Ε. ξεκίνησε το 1984 με κατασκευή επίπλων για ξενοδοχεία και ενοικιαζόμενα δωμάτια. Παράλληλα έφτιαχνε έπιπλα παιδικά και έπιπλα για κομμωτήρια.</p>
+
+                <a href="#!"><img src="facebook.png" class="fb"/></a>
+               </div> <!-- end of container -->
+    
+            <img src="backarrowtwo.png" alt="next-arrow-icon" class="main-nav prev swiper-button-prev  swiper-button-prev prev-icon" /> 
+
+            <img src="backarrow.png" alt="next-arrow-icon" class="main-nav next swiper-button-next  swiper-button-next next-icon" />
+              
+
+            </div> <!-- end of wrapper -->
+
+          </div>
+
+          <div class="swiper-slide slide-03">
+            
+            <div class="my-wrapper">
+              
+                <div class="my-container">
+
+                <img src="house-decor-logo.png" alt="logo" class="slide-03-logo" />
+
+                <p class="subhead subhead-03">Η Διακόσμηση ολοκληρώνει το concept ενός χώρου, ως μια φυσική συνέχεια της επίπλωσης.Το καλαίσθητο design μπορεί να αλλάξει την όψη του και στο HouseDecor αυτό μπορεί να γίνει πραγματικότητα.</p>
 
 
-        </div>
+                <div class="social-icons">
+                  <a href="" class="insta-03"><img src="insta-white.png" alt="insta"  /></a>
+                  <a href="" class="fb-03"><img src="facebook-white.png" alt="fb"  /></a>
+                </div>
 
-    </div>
+
+                <div class="btn-outline-02">
+                     <a href="#!" class="primary-btn-02">
+                      SHOP NOW
+                     </a>  
+                </div> 
+
+
+
+
+                </div> <!-- end of container -->  
+
+                <img src="backarrowtwo.png" alt="next-arrow-icon" class="main-nav prev swiper-button-prev  swiper-button-prev prev-icon" /> 
+ 
+            </div> <!-- end of wrapper -->
+              
+
+
+           
+          </div>
 
 
      
@@ -279,10 +481,10 @@
          
      const images = ["https://rohit-virkud.github.io/distortion/background idea.png", "https://rohit-virkud.github.io/distortion/img2.png"];
 
+    
 
         rgbKineticSlider = new rgbKineticSlider({
             slideImages: images,
-        
 
             backgroundDisplacementSprite:
                 "map-9.jpg",
@@ -307,12 +509,23 @@
             navImagesRgbIntensity: 120,
         });
 
+        
+
+
 
 
 
 
 
          var swiper = new Swiper('.swiper-container', {
+             effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
             speed: 1400,
             noSwiping: true,
             navigation: {
